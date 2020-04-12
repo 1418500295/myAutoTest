@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="六合头条">
+    <test name="首页测试">
+        <packages>
+            <package name="com.toutiao.cases"/>
+        </packages>
+    </test>
+    <listeners>
+        <listener class-name="com.toutiao.config.ExtentTestNgIReporterListener"/>
+    </listeners>
+</suite>
