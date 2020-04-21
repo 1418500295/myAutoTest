@@ -1,16 +1,13 @@
 package com.toutiao.cases;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.toutiao.utils.DataUtil;
-import freemarker.ext.beans.HashAdapter;
-import netscape.javascript.JSObject;
 import org.testng.annotations.Test;
-
 import java.io.*;
 import java.lang.reflect.Type;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class Demo {
     public static void main(String[] args) {
@@ -103,6 +100,21 @@ public class Demo {
         for (Map.Entry<String,Object> entry: jsonObject.entrySet()){
             System.out.println(entry.getKey()+"\n"+entry.getValue());
         }
+    }
+
+    @Test
+    public void second(){
+        String s = "晚上发2434斯蒂芬USYT是的dsad否是的" +
+                "湿哒哒撒是dghgh否发送丰7878发多少 " +
+                "大萨达司法ijfg机关考虑是的到767645房价高" +
+                "房价啥福利费发多少";
+        String t = Pattern.compile("[^A-Za-z]").matcher(s).replaceAll("");
+        String a = Pattern.compile("[^0-9]").matcher(s).replaceAll("");
+        String c = Pattern.compile("[a-zA-Z0-9]").matcher(s).replaceAll("");
+        System.out.println(s.length());
+        System.out.println(c);
+        System.out.println(t);
+        System.out.println(a);
     }
 
 }

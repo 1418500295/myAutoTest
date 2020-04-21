@@ -1,7 +1,9 @@
+com\toutiao\utils\EncryptDataUtil.class
 com\toutiao\cases\DemoTest.class
 com\toutiao\utils\DataUtil.class
 com\toutiao\config\ExtentTestNgIReporterListener.class
 com\toutiao\utils\RunMain.class
+com\toutiao\utils\AesCBCUtil.class
 com\toutiao\cases\Demo.class
 com\toutiao\config\ExtentTestNgIReporterListener$1.class
 com\toutiao\config\TestConfig.class

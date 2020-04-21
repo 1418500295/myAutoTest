@@ -63,7 +63,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.toutiao.cases.Demo</mainClass>
+                                    <mainClass>com.toutiao.cases.DemoTest</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

@@ -36,7 +36,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.toutiao.cases.Demo</mainClass>
+                  <mainClass>com.toutiao.cases.DemoTest</mainClass>
                 </transformer>
               </transformers>
             </configuration>

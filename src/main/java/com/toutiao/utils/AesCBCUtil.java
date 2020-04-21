@@ -47,9 +47,9 @@ public class AesCBCUtil {
 
     }
 
-//    public static void main(String[] args) throws NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException {
-//        String s = "dfemdMk/2fsSs9TowxjaHSFLpZQO1knVWMZy3lIULJ1dKk7jij8sZVrw7UA7wBNGx+wC8VhUawI3IF2Ym2wDVfsWDZcZTuS8" +
-//                "JthznhsM/2Za1M28hBlS2r2nWUkfJTlU8r7joOqJND+La7wZCxByeruxDhZz10WfyivkOccWk6I=";
-//        System.out.println(AesUtil.Decrypt(s));
-//    }
+
+    public static void main(String[] args) throws NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException {
+//        String s = "dfemdMk/2fsSs9TowxjaHas7iSRNT4VIp7TL5DDym/ojChHH6BAMh0M+4xCJmLpcZAP5z/1dJ0Dov4cQ4YqhyLiu3UlOThZI8sPwpxaztaQSz+81at5pwdtezyromee8TIIemj1C2++qufHUqGS7omWocBoECwGgUcCxH0pSSDIqFZEiuKinEPD4gNpew1f3cfH2hf6nATC/IiQr2MIEqwKKvNKxexgM1ZFg9u+dxxq9jLiW2poHCAM88y38AesHV+YmbAmhCQikGZr5nnctuA==";
+//        System.out.println(AesCBCUtil.Decrypt(s));
+    }
 }
