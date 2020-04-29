@@ -54,8 +54,13 @@ public class DemoTest {
 
     }
 
-    public void first(){
-        System.out.println("hah");
-    }
 
+    public void first() {
+        System.out.println("hah");
+
+    }
+    public void second() {
+        System.out.println("我是second");
+
+    }
 }
