@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4e65bf-4cd3-41c9-9381-1a7430cc99f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/toutiao/cases/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toutiao/cases/DemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/toutiao/cases/DemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/toutiao/cases/DemoTest.class" afterDir="false" />
+=======
+>>>>>>> xiaohong
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

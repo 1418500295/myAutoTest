@@ -23,14 +23,13 @@ import java.security.NoSuchAlgorithmException;
 public class DemoTest {
 
 
-
     @Test
     public void getDemo() throws IOException {
         TestConfig.getDemoUrl = ConfigFile.getUrl("getDemo");
         System.out.println(TestConfig.getDemoUrl);
 
-        JSONObject jsonObject =  DataUtil.getJsonData("getDemo.json").getJSONObject(0);
-        String result = RunMain.getMethod(TestConfig.getDemoUrl,jsonObject);
+        JSONObject jsonObject = DataUtil.getJsonData("getDemo.json").getJSONObject(0);
+        String result = RunMain.getMethod(TestConfig.getDemoUrl, jsonObject);
         System.out.println(result);
     }
 
@@ -38,25 +37,21 @@ public class DemoTest {
     @Test
     public void memberHeed() throws NoSuchPaddingException, InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException {
         String url = "";
-        JSONObject jsonObject = EncryptDataUtil.getData("member_heed.json",0);
-        String result = RunMain.getMethod(url,jsonObject);
+        JSONObject jsonObject = EncryptDataUtil.getData("member_heed.json", 0);
+        String result = RunMain.getMethod(url, jsonObject);
         JSONObject res = JSON.parseObject(AesCBCUtil.Decrypt(result));
     }
+
 
     @Test
     public void getWithParam() throws IOException {
         String url = "http://localhost:8889/getwithparam?name=huhansan&age=10";
         HttpGet get = new HttpGet(url);
         HttpResponse response = new DefaultHttpClient().execute(get);
-        String result = EntityUtils.toString(response.getEntity(),"utf-8");
+        String result = EntityUtils.toString(response.getEntity(), "utf-8");
         System.out.println(result);
 
-    }
-    public static void main(String[] args) throws IOException {
-        DemoTest demoTest = new DemoTest();
-        demoTest.getDemo();
-    }
 
+    }
 
 }
-
