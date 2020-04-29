@@ -58,4 +58,8 @@ public class DemoTest {
         System.out.println("我是second");
     }
 
+    public void three(){
+        System.out.println("i am three");
+    }
+
 }
