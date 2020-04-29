@@ -54,4 +54,8 @@ public class DemoTest {
 
     }
 
+    public void second(){
+        System.out.println("我是second");
+    }
+
 }
