@@ -61,6 +61,10 @@ public class DemoTest {
         System.out.println("three");
     }
 
+    public void four(){
+        System.out.println("four");
+    }
+
 
 
 
