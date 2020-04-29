@@ -70,4 +70,9 @@ public class DemoTest {
     }
 
 
+    public void four(){
+        System.out.println("i am four");
+    }
+
+
 }
