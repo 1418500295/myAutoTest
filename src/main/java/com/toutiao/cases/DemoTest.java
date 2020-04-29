@@ -38,7 +38,10 @@ public class DemoTest {
         String result = RunMain.getMethod(url,jsonObject);
         JSONObject res = JSON.parseObject(AesCBCUtil.Decrypt(result));
     }
-
+    @Test
+    public void first(){
+        System.out.println("hello");
+    }
     public static void main(String[] args) throws IOException {
         DemoTest demoTest = new DemoTest();
         demoTest.getDemo();
