@@ -5,6 +5,10 @@ import com.alibaba.fastjson.JSONObject;
 import com.toutiao.config.TestConfig;
 import com.toutiao.utils.*;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -39,6 +43,15 @@ public class DemoTest {
         JSONObject res = JSON.parseObject(AesCBCUtil.Decrypt(result));
     }
 
+    @Test
+    public void getWithParam() throws IOException {
+        String url = "http://localhost:8889/getwithparam?name=huhansan&age=10";
+        HttpGet get = new HttpGet(url);
+        HttpResponse response = new DefaultHttpClient().execute(get);
+        String result = EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println(result);
+
+    }
     public static void main(String[] args) throws IOException {
         DemoTest demoTest = new DemoTest();
         demoTest.getDemo();
