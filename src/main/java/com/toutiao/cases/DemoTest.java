@@ -54,4 +54,8 @@ public class DemoTest {
 
     }
 
+    public void first(){
+        System.out.println("hah");
+    }
+
 }
