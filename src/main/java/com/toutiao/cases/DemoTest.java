@@ -62,5 +62,12 @@ public class DemoTest {
     public void second() {
         System.out.println("我是second");
 
+
     }
+
+    public void three(){
+        System.out.println("i am three");
+    }
+
+
 }
