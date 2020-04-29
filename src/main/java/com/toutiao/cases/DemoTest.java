@@ -53,5 +53,15 @@ public class DemoTest {
 
 
     }
+    public void second(){
+        System.out.println("second");
+    }
+
+    public void three(){
+        System.out.println("three");
+    }
+
+
+
 
 }
