@@ -16,6 +16,7 @@ public class DataUtil {
 //            String path = System.getProperty("user.dir");
 //            String targetPath = path + "/src/main/resources/testdata/" + fileName;
             //解决在远程服务器上无法找到文件的问题
+            //InputStream inputStream = GetTestDataUtil.class.getResourceAsStream("/testdata/"+fileName);
            @Cleanup InputStream inputStream = dataUtil.getClass().getResourceAsStream("/testdata/" + fileName);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
