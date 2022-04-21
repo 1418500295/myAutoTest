@@ -92,7 +92,7 @@ public class RunMain {
     
     
     CloseableHttpClient client = HttpClients.createDefault();
-        String url = "https://api.tbservetest.com/uc/upload/oss/image";
+        String url = "";
         HttpPost post = new HttpPost(url);
         File file = new File("C:\\Users\\Administrator\\IdeaProjects\\jiaoyisuo\\src\\屏幕截图 2022-04-08 154019.png");
         FileBody fileBody = new FileBody(file);
