@@ -89,6 +89,19 @@ public class RunMain {
         }
         return result;
     }
-
+    
+    
+    CloseableHttpClient client = HttpClients.createDefault();
+        String url = "https://api.tbservetest.com/uc/upload/oss/image";
+        HttpPost post = new HttpPost(url);
+        File file = new File("C:\\Users\\Administrator\\IdeaProjects\\jiaoyisuo\\src\\屏幕截图 2022-04-08 154019.png");
+        FileBody fileBody = new FileBody(file);
+        StringBody comment = new StringBody("upload file", ContentType.TEXT_PLAIN);
+        HttpEntity entity = MultipartEntityBuilder.create().addPart("file",fileBody)
+                .addPart("comment",comment).build();
+        post.setEntity(entity);
+        post.setHeader("","");
+        HttpResponse response = client.execute(post);
+        System.out.println(EntityUtils.toString(response.getEntity(),"utf-8"));
 
 }
