@@ -9,6 +9,35 @@
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
+                 <!--            <plugin>-->
+<!--                <artifactId>maven-resources-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        &lt;!&ndash; 自定义 &ndash;&gt;-->
+<!--                        <id>copy-resources</id>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            &lt;!&ndash; 复制静态资源 &ndash;&gt;-->
+<!--                            <goal>copy-resources</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <resources>-->
+<!--                                <resource>-->
+<!--                                    &lt;!&ndash; 指定静态资源的路径 &ndash;&gt;-->
+<!--                                    <directory>src/main/resources</directory>-->
+<!--                                    &lt;!&ndash; 指定需要复制的文件 &ndash;&gt;-->
+<!--                                    <includes>-->
+<!--                                        <include>chromedriver.exe</include>-->
+<!--                                    </includes>-->
+<!--                                </resource>-->
+<!--                            </resources>-->
+<!--                            &lt;!&ndash; 指定复制到该目录下 &ndash;&gt;-->
+<!--                            <outputDirectory>target/src/main/resources</outputDirectory>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+                 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
